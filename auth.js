@@ -28,7 +28,7 @@ router.post("/signup", async function (req, res) {
       });
     }
 
-    const hashedpassword = await bcrypt.hash(password, 10);
+    const hashedPassword = await bcrypt.hash(password, 10);
 
     const newUser = new User({
       email: email,
